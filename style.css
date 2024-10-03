@@ -203,7 +203,29 @@ background: url('./assets/overlay-2.png') center center;
     font-size: 20px;
     margin-left: 5px;
 }   
+.contact__with__us__name{
+    font-size: 24px;
+    color: #3850d5;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600; 
+}
+.contact__element{
+    margin-top: 30px;
 
+}
+.contact__element span {
+    color: #3850d5;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.contact__element p {
+    margin-top: 10px;
+    color: #1e3547;
+    font-size: 25px;
+    line-height: 35px;
+}
 /**********************/
 .main__form {
     margin-left: 90px;   
@@ -383,7 +405,7 @@ background: url('./assets/overlay-2.png') center center;
 
 
 .domain__list {
-    width: 60%;
+    width: 1024px;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -398,6 +420,8 @@ background: url('./assets/overlay-2.png') center center;
     background-color: #fff;
     border-radius: 20px;
     margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .domain__list__desc {
   width: 100%;
@@ -406,6 +430,8 @@ background: url('./assets/overlay-2.png') center center;
   border-radius: 20px 20px 0px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
 }
 
 .list__desc {
@@ -414,10 +440,38 @@ background: url('./assets/overlay-2.png') center center;
     font-weight: 600;
 }
 
-.domain__list__list {}
+.domain__list__list {
+    padding: 0px 30px;
+}
 
-.list__element {}
+.list__element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 0.5px solid #e3e3e38c;
+}
 
-.list__element__name {}
+.list__element__name {
+    color: #3850d5;
+    font-size: 40px;
+    font-weight: 600;
+}
 
-.list__element__price {}
+.list__element__price {
+    color: #3850d5;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.footer__container{
+    width: 1024px;
+    margin: 0 auto;
+    color: #1e3547;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.footer__container a {
+    color: #3850d5;
+}
+

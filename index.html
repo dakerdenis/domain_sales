@@ -75,13 +75,28 @@
                     <div id="tab1" class="tab-content">
                         <!-- Placeholder for custom content, same size as main__form__container -->
                         <div class="main__form__container">
-                            <p>Your custom content here...</p>
+                            <div class="contact__with__us__name">
+                                Bizimlə əlaqə
+                            </div>
+                            <div class="contact__element">
+                                <span>Bizim email:</span>
+                                <p>contact@domainalmaq.az</p>
+                            </div>
+                            <div class="contact__element">
+                                <span>Bizə zəng edin:</span>
+                                <p>+994 50 750 69 01</p>
+                            </div>
+                            <div class="contact__element">
+                                <span>Ünvanımız:</span>
+                                <p>AZ1000, Azərbaycan,
+                                    Bakı şəh., Azadlıq pr. 3</p>
+                            </div>
                         </div>
                     </div>
                     <div id="tab2" class="tab-content">
                         <form action="" method="POST" class="main__form__container">
                             <div class="main__form__name">
-                                Make an Offer
+                                Bizə yazın
                             </div>
 
                             <div class="main__form__desc">
@@ -118,7 +133,7 @@
             <!----List of abailable domains---->
             <div class="domain__list">
                 <div class="domain__list__name">
-                    Domain list 
+                    Domain list
                 </div>
                 <div class="domain__list__container">
                     <div class="domain__list__desc">
@@ -133,9 +148,39 @@
                         <!-------->
                         <div class="list__element">
                             <div class="list__element__name">
-                                Domain 1 pizda.az
+                                Smartcoffe.az
                             </div>
-    
+
+                            <div class="list__element__price">
+                                200 AZN
+                            </div>
+                        </div>
+                        <!-------->
+                        <div class="list__element">
+                            <div class="list__element__name">
+                                Smartcoffe.az
+                            </div>
+
+                            <div class="list__element__price">
+                                200 AZN
+                            </div>
+                        </div>
+                        <!-------->
+                        <div class="list__element">
+                            <div class="list__element__name">
+                                Smartcoffe.az
+                            </div>
+
+                            <div class="list__element__price">
+                                200 AZN
+                            </div>
+                        </div>
+                        <!-------->
+                        <div class="list__element">
+                            <div class="list__element__name">
+                                Smartcoffe.az
+                            </div>
+
                             <div class="list__element__price">
                                 200 AZN
                             </div>
@@ -144,6 +189,13 @@
                 </div>
             </div>
 
+            <!---Footer----->
+
+            <div class="footer__container">
+                <div class="footer__name">
+                    © 2024 domainalan.az Developed by <a target="_blank" href="https://daker.site/">Daker</a>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -151,20 +203,20 @@
         function showTab(tabId) {
             // Hide all tab contents
             var tabs = document.querySelectorAll('.tab-content');
-            tabs.forEach(function(tab) {
+            tabs.forEach(function (tab) {
                 tab.classList.remove('active');
             });
-    
+
             // Show the selected tab
             var selectedTab = document.getElementById(tabId);
             selectedTab.classList.add('active');
-    
+
             // Remove the active class from all trapezoid divs
             var tabButtons = document.querySelectorAll('.trapezoid-div');
-            tabButtons.forEach(function(button) {
+            tabButtons.forEach(function (button) {
                 button.classList.remove('active');
             });
-    
+
             // Add the active class to the clicked trapezoid div
             if (tabId === 'tab1') {
                 document.querySelector('.trapezoid-div1').classList.add('active');
@@ -172,12 +224,12 @@
                 document.querySelector('.trapezoid-div2').classList.add('active');
             }
         }
-    
+
         // Optionally, set the default active tab
         showTab('tab1');
     </script>
-    
-    
+
+
 </body>
 
 </html>
