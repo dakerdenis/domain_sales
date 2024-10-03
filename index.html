@@ -53,67 +53,92 @@
                     </div>
 
                     <div class="domain__offer_desc">
-                       <p> Don't waste your time! Write us </p>
+                        <p> Don't waste your time! Write us </p>
 
-                       <p> &#10132;</p>
+                        <p> &#10132;</p>
                     </div>
                 </div>
 
                 <!----Offer form----->
                 <div class="main__form">
-                    <form action="" method="POST" class="main__form__container">
-                        <div class="main__form__name">
-                            Make an Offer
+                    <div class="form__tabs">
+                        <div onclick="showTab('tab1')" class="trapezoid-div trapezoid-div1">
+                            <p>Bizimlə əlaqə</p>
                         </div>
 
-                        <div class="main__form__desc">
-                            <p>Short description of domain, visits, ranking, age, useful
-                                stats</p>
+                        <div onclick="showTab('tab2')" class="trapezoid-div trapezoid-div2">
+                            <p>Bizə yazın</p>
                         </div>
 
-                        <div class="main__form__fields">
-                            <div class="form__2inputblock">
-                                <div class="form__input__block"><input placeholder="Your name" type="text"></div>
-                                <div class="form__input__block"><input placeholder="Your email" type="text"></div>
+                    </div>
+                    <!-- First tab content -->
+                    <div id="tab1" class="tab-content">
+                        <!-- Placeholder for custom content, same size as main__form__container -->
+                        <div class="main__form__container">
+                            <p>Your custom content here...</p>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-content">
+                        <form action="" method="POST" class="main__form__container">
+                            <div class="main__form__name">
+                                Make an Offer
                             </div>
 
-                            <div class="form__inputblock">
-                                <div class="form__input__block">
-                                    <input type="text" placeholder="Mobile number">
+                            <div class="main__form__desc">
+                                <p>Short description of domain, visits, ranking, age, useful
+                                    stats</p>
+                            </div>
+
+                            <div class="main__form__fields">
+                                <div class="form__2inputblock">
+                                    <div class="form__input__block"><input placeholder="Your name" type="text"></div>
+                                    <div class="form__input__block"><input placeholder="Your email" type="text"></div>
                                 </div>
-                                <div class="form__input__textarea">
+
+                                <div class="form__inputblock">
+                                    <div class="form__input__block">
+                                        <input type="text" placeholder="Mobile number">
+                                    </div>
+                                    <div class="form__input__textarea">
                                         <textarea placeholder="Your message" name="" id=""></textarea>
+                                    </div>
                                 </div>
+
+
                             </div>
+                            <div class="form__input__button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
 
-
-                        </div>
-                        <div class="form__input__button">
-                            <button type="submit">Send Message</button>
-                        </div>
-                    </form>
                 </div>
             </div>
 
             <!----List of abailable domains---->
             <div class="domain__list">
-                <div class="domain__list__desc">
-                    <div class="list__desc">
-                        Domain name
-                    </div>
-                    <div class="list__desc">
-                        Price
-                    </div>
+                <div class="domain__list__name">
+                    Domain list 
                 </div>
-                <div class="domain__list__list">
-                    <!-------->
-                    <div class="list__element">
-                        <div class="list__element__name">
-                            Domain 1 pizda.az
+                <div class="domain__list__container">
+                    <div class="domain__list__desc">
+                        <div class="list__desc">
+                            Domain name
                         </div>
-
-                        <div class="list__element__price">
-                            200 AZN
+                        <div class="list__desc">
+                            Price
+                        </div>
+                    </div>
+                    <div class="domain__list__list">
+                        <!-------->
+                        <div class="list__element">
+                            <div class="list__element__name">
+                                Domain 1 pizda.az
+                            </div>
+    
+                            <div class="list__element__price">
+                                200 AZN
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,6 +147,37 @@
         </div>
 
     </div>
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+    
+            // Show the selected tab
+            var selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active');
+    
+            // Remove the active class from all trapezoid divs
+            var tabButtons = document.querySelectorAll('.trapezoid-div');
+            tabButtons.forEach(function(button) {
+                button.classList.remove('active');
+            });
+    
+            // Add the active class to the clicked trapezoid div
+            if (tabId === 'tab1') {
+                document.querySelector('.trapezoid-div1').classList.add('active');
+            } else if (tabId === 'tab2') {
+                document.querySelector('.trapezoid-div2').classList.add('active');
+            }
+        }
+    
+        // Optionally, set the default active tab
+        showTab('tab1');
+    </script>
+    
+    
 </body>
 
 </html>
