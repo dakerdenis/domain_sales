@@ -408,7 +408,11 @@ background: url('./assets/overlay-2.png') center center;
   justify-content: space-between;
 }
 
-.list__desc {}
+.list__desc {
+    color: #3850d5;
+    font-size: 19px;
+    font-weight: 600;
+}
 
 .domain__list__list {}
 
